@@ -1,0 +1,20 @@
+{
+  "name": "e2e-testing-bloglist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:report": "playwright show-report",
+    "test:trace": "npm run test -- --trace on",
+    "test:chromium": "npm run test -- --project chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.12.5",
+    "dotenv": "^16.4.5"
+  }
+}
