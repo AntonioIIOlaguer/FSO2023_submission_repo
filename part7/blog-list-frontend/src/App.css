@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar-icon {
+    @apply bg-gray-700 text-green-500 font-bold py-2 px-4 !m-0 rounded-3xl
+    hover:bg-green-600 hover:rounded-xl hover:text-white
+    transition-all duration-300 ease-linear;
+  }
+
+  .button-contrast {
+    @apply text-white bg-gray-700 hover:bg-gray-800
+      font-medium rounded-lg text-sm w-full px-5 py-2.5 m-2 text-center sm:w-auto;
+  }
+}
+
+button {
+  @apply bg-green-700 text-white font-bold py-2 px-4 m-2 rounded-md
+    hover:bg-green-600 hover:rounded-xl hover:text-white
+    transition-all duration-300 ease-linear;
+}
+
+input {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+    focus:ring-blue-500 focus:border-blue-500 block w-full p-1;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.blogStyle {
+  border-style: solid;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 5px;
+}
